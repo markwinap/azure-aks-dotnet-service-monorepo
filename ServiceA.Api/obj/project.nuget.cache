@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "BI6M0DANBNVEzjdhiQt6eeiU7WsSh3av9+Hf1qoygxHpFFW0v9JGnHVLG5ar/g/b8FMWJy6zisyQYnc4Uwuu6Q==",
+  "success": true,
+  "projectFilePath": "D:\\Github\\azure-aks-dotnet-service-monorepo\\ServiceA.Api\\ServiceA.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\markw\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\markw\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\markw\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\markw\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\markw\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\markw\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

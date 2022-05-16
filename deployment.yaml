@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-b-deployment
+spec:
+# selector - select with pods to manage ( in this case matching labe)
+  selector:
+    matchLabels:
+      app: service-b
+  template:
+    metadata:
+      labels:
+        app: service-b
+# list of containers in deployment
+    spec:
+      containers:
+      - name: service-b
+        image: azure-aks-dotnet-service-monorepo_azure-aks-service-b
+# memory and cpu resources 128Mi 1024 kibi / 500m is the sane as 0.5 CPU
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+# ports exposed in container
+        ports:
+        - containerPort: 80
+# Service expose app runing on a set of pods as a network service
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-b-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: service-b
+  ports:
+  - port: 8080
+    targetPort: 80

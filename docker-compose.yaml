@@ -1,0 +1,12 @@
+version: '3'
+services:
+  azure-aks-service-a:
+    build: ./ServiceA.Api
+    container_name: azure-aks-service-a
+    ports:
+        - "8080:80"
+  azure-aks-service-b:
+    build: ./ServiceB.Api
+    container_name: azure-aks-service-b
+    ports:
+        - "8081:80"
